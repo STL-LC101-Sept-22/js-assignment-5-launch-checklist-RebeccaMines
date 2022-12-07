@@ -29,10 +29,10 @@ window.addEventListener("load", function() {
         let fuelLevel = Number(fuelInput.value);
 
         let cargoInput = document.querySelector("input[name=cargoMass]");
-        let cargoLevel = Number(cargoInput.value);
+        let cargoMass = Number(cargoInput.value);
 
 
-    formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel); 
+    formSubmission(document, list, pilot, copilot, fuelLevel, cargoMass); 
     });
 
 });
