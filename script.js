@@ -3,7 +3,11 @@
 const { formSubmission } = require("./scriptHelper");
 
 window.addEventListener("load", function() {
-
+   
+    let list = document.getElementById("faultyItems");
+    let form = document.querySelector("form");
+    list.style.visibility = "hidden";
+    
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
    let listedPlanetsResponse;
@@ -15,7 +19,6 @@ window.addEventListener("load", function() {
        // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
        
     })
-
 
     form.addEventListener("submit", function(event) {
         event.preventDefault();
