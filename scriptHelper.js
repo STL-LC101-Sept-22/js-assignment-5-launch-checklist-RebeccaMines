@@ -80,15 +80,11 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoMass) {
 }
 
 async function myFetch() {
-    let planetsReturned;
-
-    planetsReturned = await fetch("https://handlers.education.launchcode.org/static/planets.json").then( function(response) {
-      return response.json()
-
-});
-
+    let response = await fetch("https://handlers.education.launchcode.org/static/planets.js"); 
+    let planetsReturned = await response.json();
     return planetsReturned;
-}
+
+};
 
 function pickPlanet(planets) {
     let index = Math.floor(Math.random() * planets.lenth);
