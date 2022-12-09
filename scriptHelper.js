@@ -3,8 +3,8 @@ require('isomorphic-fetch');
 
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
    // Here is the HTML formatting for our mission target div.
-   window.addEventListener("load", function() {
-    container = window.document;
+//    window.addEventListener("load", function() {
+//     container = window.document;
    
    let div = document.getElementById("missionTarget");
 
@@ -20,8 +20,8 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
                 <img src="${imageUrl}">
                 `;
    
-    });
-};
+    };
+
 
 function validateInput(testInput) {
     if (testInput === "") {
@@ -79,7 +79,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoMass) {
             launchStatus.style.color = "rgb(65, 159, 106)";
             list.style.visibility = "visible";
         }
-    }6
+    }
     
 }
 
