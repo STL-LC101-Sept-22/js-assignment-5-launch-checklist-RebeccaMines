@@ -86,12 +86,11 @@ async function myFetch() {
       return response.json();
 
 });
-
-    return planetsReturned;
+     return planetsReturned;
 }
 
 function pickPlanet(planets) {
-    let index = Math.floor(Math.random() * planets.lenth);
+    let index = Math.floor(Math.random() * planets.length);
     return planets[index];
 }
 
